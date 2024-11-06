@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Measurement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Shape Your Style Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="body_types.html">Body Types</a></li>
+                <li><a href="body_measurement.html">Body Measurement</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="user_profile.html">User Profile</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Measurement Form -->
+    <main class="measurement-main">
+        <section class="form-section">
+            <div class="form-container">
+                <h2>Find Your Body Shape</h2>
+                <p>Please provide your body measurements below to determine your body shape.</p>
+                
+                <form action="body_types.html" method="POST">
+                    <div class="input-group">
+                        <label for="bust">Bust Measurement (in cm):</label>
+                        <input type="number" id="bust" name="bust" placeholder="Enter bust size" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="waist">Waist Measurement (in cm):</label>
+                        <input type="number" id="waist" name="waist" placeholder="Enter waist size" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="hip">Hip Measurement (in cm):</label>
+                        <input type="number" id="hip" name="hip" placeholder="Enter hip size" required>
+                    </div>
+
+                    <button type="submit" class="cta-button">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Shape Your Style © 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
